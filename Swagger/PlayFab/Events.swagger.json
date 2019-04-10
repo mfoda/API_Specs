@@ -62,48 +62,6 @@
           "ProfileDoesNotExist"
         ]
       }
-    },
-    "/Event/WriteTelemetryEvents": {
-      "post": {
-        "operationId": "WriteTelemetryEvents",
-        "tags": [
-          "PlayStream Events"
-        ],
-        "description": "Write batches of entity based events to as Telemetry events (bypass PlayStream).",
-        "externalDocs": {
-          "url": "https://api.playfab.com/documentation/events/method/WriteTelemetryEvents"
-        },
-        "parameters": [
-          {
-            "$ref": "#/parameters/WriteEventsRequest"
-          }
-        ],
-        "security": [
-          {
-            "EntityToken": []
-          }
-        ],
-        "responses": {
-          "200": {
-            "$ref": "#/responses/WriteEventsResponse"
-          },
-          "400": {
-            "$ref": "#/responses/ApiErrorWrapper"
-          }
-        },
-        "x-AnyInclusiveFlags": [
-          "Beta"
-        ],
-        "x-ms-docs-errors": [
-          "EventEntityNotAllowed",
-          "EventNamespaceNotAllowed",
-          "InvalidJSONContent",
-          "NotAuthenticated",
-          "NotAuthorized",
-          "OverLimit",
-          "ProfileDoesNotExist"
-        ]
-      }
     }
   },
   "definitions": {
@@ -150,16 +108,6 @@
         "Type": {
           "description": "Entity type. See https://api.playfab.com/docs/tutorials/entities/entitytypes",
           "type": "string"
-        },
-        "TypeString": {
-          "description": "Alternate name for Type.",
-          "type": "string",
-          "x-deprecation": {
-            "ProposedAfter": "6/1/2018",
-            "DeprecatedAfter": "7/1/2018",
-            "ObsoleteAfter": "8/1/2018",
-            "ReplacedBy": "Type"
-          }
         }
       },
       "required": [

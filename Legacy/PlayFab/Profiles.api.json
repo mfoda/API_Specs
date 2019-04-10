@@ -195,6 +195,13 @@
       "assembly": "PlayFab.Profiles.Models",
       "properties": [
         {
+          "name": "AvatarUrl",
+          "description": "Avatar URL for the entity.",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": true
+        },
+        {
           "name": "Created",
           "description": "The creation time of this profile in UTC.",
           "jsontype": "String",
@@ -528,6 +535,76 @@
         }
       ]
     },
+    "SetAvatarUrlRequest": {
+      "name": "SetAvatarUrlRequest",
+      "className": "SetAvatarUrlRequest",
+      "classNameSpace": "PlayFab.Profiles.Models",
+      "assembly": "PlayFab.Profiles.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "description": "Given an entity profile, will update its avatar url to the provided url if the profile's version is equal to the specified value",
+      "isRequest": true,
+      "properties": [
+        {
+          "name": "AvatarUrl",
+          "description": "URL of the avatar image. If empty, it removes the existing avatar URL",
+          "jsontype": "String",
+          "actualtype": "String",
+          "optional": false
+        },
+        {
+          "name": "Entity",
+          "description": "The entity to perform this action on.",
+          "jsontype": "Object",
+          "actualtype": "EntityKey",
+          "isclass": true,
+          "optional": true
+        },
+        {
+          "name": "ProfileVersion",
+          "description": "The expected version of the profile to perform this update on",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": true
+        }
+      ]
+    },
+    "SetAvatarUrlResponse": {
+      "name": "SetAvatarUrlResponse",
+      "className": "SetAvatarUrlResponse",
+      "classNameSpace": "PlayFab.Profiles.Models",
+      "assembly": "PlayFab.Profiles.Models",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "isResult": true,
+      "properties": [
+        {
+          "name": "Entity",
+          "description": "The entity to perform this action on.",
+          "jsontype": "Object",
+          "actualtype": "EntityKey",
+          "isclass": true,
+          "optional": true
+        },
+        {
+          "name": "OperationResult",
+          "description": "The type of operation that occurred on the profile's avatar URL",
+          "jsontype": "String",
+          "actualtype": "OperationTypes",
+          "isenum": true,
+          "optional": true
+        },
+        {
+          "name": "ProfileVersion",
+          "description": "The updated version of the profile after the avatar URL update",
+          "jsontype": "Number",
+          "actualtype": "int32",
+          "optional": true
+        }
+      ]
+    },
     "SetDisplayNameRequest": {
       "name": "SetDisplayNameRequest",
       "className": "SetDisplayNameRequest",
@@ -536,7 +613,7 @@
       "AnyInclusiveFlags": [
         "Beta"
       ],
-      "description": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to or newer than the specified value",
+      "description": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to the specified value",
       "isRequest": true,
       "properties": [
         {
@@ -667,7 +744,7 @@
       "className": "SetProfileLanguageRequest",
       "classNameSpace": "PlayFab.Profiles.Models",
       "assembly": "PlayFab.Profiles.Models",
-      "description": "Given an entity profile, will update its language to the one passed in if the profile's version is at least the one passed in.",
+      "description": "Given an entity profile, will update its language to the one passed in if the profile's version is equal to the one passed in.",
       "isRequest": true,
       "properties": [
         {
@@ -726,6 +803,7 @@
         "GetGlobalPolicy",
         "GetProfile",
         "GetProfiles",
+        "SetAvatarUrl",
         "SetDisplayName",
         "SetGlobalPolicy",
         "SetProfileLanguage",
@@ -793,9 +871,32 @@
       ]
     },
     {
+      "name": "SetAvatarUrl",
+      "summary": "Update the avatar url of the entity",
+      "requestDetails": "Given an entity profile, will update its avatar url to the provided url if the profile's version is equal to the specified value",
+      "subgroup": "Account Management",
+      "titleTiers": null,
+      "url": "/Profile/SetAvatarUrl",
+      "auth": "EntityToken",
+      "method": "POST",
+      "request": "SetAvatarUrlRequest",
+      "requestExample": "{\r\n  \"AvatarUrl\": \"https://test.com/image.png\",\r\n  \"ProfileVersion\": 123,\r\n  \"Entity\": {\r\n    \"Id\": \"90901000\",\r\n    \"Type\": \"title_player_account\",\r\n    \"TypeString\": \"title_player_account\"\r\n  }\r\n}",
+      "result": "SetAvatarUrlResponse",
+      "resultExample": "{\r\n  \"code\": 200,\r\n  \"status\": \"OK\",\r\n  \"data\": {\r\n    \"ProfileVersion\": 85,\r\n    \"OperationResult\": \"Updated\"\r\n  }\r\n}",
+      "AnyInclusiveFlags": [
+        "Beta"
+      ],
+      "errors": [
+        "InvalidParams",
+        "NotAuthenticated",
+        "NotAuthorized",
+        "ProfileDoesNotExist"
+      ]
+    },
+    {
       "name": "SetDisplayName",
       "summary": "Update the display name of the entity",
-      "requestDetails": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to or newer than the specified value",
+      "requestDetails": "Given an entity profile, will update its display name to the one passed in if the profile's version is equal to the specified value",
       "subgroup": "Account Management",
       "titleTiers": null,
       "url": "/Profile/SetDisplayName",
@@ -841,7 +942,7 @@
     {
       "name": "SetProfileLanguage",
       "summary": "Updates the entity's language. The precedence hierarchy for communication to the player is Title Player Account language, Master Player Account language, and then title default language if the first two aren't set or supported.",
-      "requestDetails": "Given an entity profile, will update its language to the one passed in if the profile's version is at least the one passed in.",
+      "requestDetails": "Given an entity profile, will update its language to the one passed in if the profile's version is equal to the one passed in.",
       "subgroup": "Account Management",
       "titleTiers": null,
       "url": "/Profile/SetProfileLanguage",
