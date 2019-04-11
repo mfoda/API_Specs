@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "190410",
+    "version": "190411",
     "title": "PlayFab Economy API",
     "description": "API methods for managing User Generated Content. API methods for managing the catalog. Inventory manages in-game assets for any given entity.",
     "termsOfService": "https://playfab.com/terms/",
@@ -2025,6 +2025,14 @@
     "CatalogConfigDisplayPropertyMappingLimit": {
       "id": 4111,
       "name": "CatalogConfigDisplayPropertyMappingLimit"
+    },
+    "CatalogConfigUnsupportedAdminEntityType": {
+      "id": 4112,
+      "name": "CatalogConfigUnsupportedAdminEntityType"
+    },
+    "CatalogConfigUnsupportedReviewerEntityType": {
+      "id": 4113,
+      "name": "CatalogConfigUnsupportedReviewerEntityType"
     },
     "ExportInvalidStatusUpdate": {
       "id": 5000,

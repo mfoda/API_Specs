@@ -8233,6 +8233,12 @@
           "name": "CatalogConfigDisplayPropertyMappingLimit"
         },
         {
+          "name": "CatalogConfigUnsupportedAdminEntityType"
+        },
+        {
+          "name": "CatalogConfigUnsupportedReviewerEntityType"
+        },
+        {
           "name": "ExportInvalidStatusUpdate"
         },
         {

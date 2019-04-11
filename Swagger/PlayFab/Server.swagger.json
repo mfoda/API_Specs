@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "190410",
+    "version": "190411",
     "title": "PlayFab Server API",
     "description": "Provides functionality to allow external (developer-controlled) servers to interact with user inventories and data in a trusted manner, and to handle matchmaking and client connection orchestration",
     "termsOfService": "https://playfab.com/terms/",
@@ -6644,6 +6644,8 @@
         "CatalogConfigInvalidDisplayPropertyName",
         "CatalogConfigInvalidDisplayPropertyType",
         "CatalogConfigDisplayPropertyMappingLimit",
+        "CatalogConfigUnsupportedAdminEntityType",
+        "CatalogConfigUnsupportedReviewerEntityType",
         "ExportInvalidStatusUpdate",
         "ExportInvalidPrefix",
         "ExportBlobContainerDoesNotExist",
@@ -19194,6 +19196,14 @@
     "CatalogConfigDisplayPropertyMappingLimit": {
       "id": 4111,
       "name": "CatalogConfigDisplayPropertyMappingLimit"
+    },
+    "CatalogConfigUnsupportedAdminEntityType": {
+      "id": 4112,
+      "name": "CatalogConfigUnsupportedAdminEntityType"
+    },
+    "CatalogConfigUnsupportedReviewerEntityType": {
+      "id": 4113,
+      "name": "CatalogConfigUnsupportedReviewerEntityType"
     },
     "ExportInvalidStatusUpdate": {
       "id": 5000,

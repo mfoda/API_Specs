@@ -4702,6 +4702,12 @@
           "name": "CatalogConfigDisplayPropertyMappingLimit"
         },
         {
+          "name": "CatalogConfigUnsupportedAdminEntityType"
+        },
+        {
+          "name": "CatalogConfigUnsupportedReviewerEntityType"
+        },
+        {
           "name": "ExportInvalidStatusUpdate"
         },
         {
@@ -15686,6 +15692,14 @@
       "id": 4111,
       "name": "CatalogConfigDisplayPropertyMappingLimit"
     },
+    "CatalogConfigUnsupportedAdminEntityType": {
+      "id": 4112,
+      "name": "CatalogConfigUnsupportedAdminEntityType"
+    },
+    "CatalogConfigUnsupportedReviewerEntityType": {
+      "id": 4113,
+      "name": "CatalogConfigUnsupportedReviewerEntityType"
+    },
     "ExportInvalidStatusUpdate": {
       "id": 5000,
       "name": "ExportInvalidStatusUpdate"
@@ -16223,6 +16237,8 @@
     "CatalogConfigInvalidDisplayPropertyName",
     "CatalogConfigInvalidDisplayPropertyType",
     "CatalogConfigDisplayPropertyMappingLimit",
+    "CatalogConfigUnsupportedAdminEntityType",
+    "CatalogConfigUnsupportedReviewerEntityType",
     "ExportInvalidStatusUpdate",
     "ExportInvalidPrefix",
     "ExportBlobContainerDoesNotExist",

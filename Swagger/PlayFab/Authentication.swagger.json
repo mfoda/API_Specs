@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "190410",
+    "version": "190411",
     "title": "PlayFab Authentication API",
     "description": "The Authentication APIs provide a convenient way to convert classic authentication responses into entity authentication models. These APIs will provide you with the entity authentication token needed for subsequent Entity API calls.",
     "termsOfService": "https://playfab.com/terms/",
@@ -2149,6 +2149,14 @@
     "CatalogConfigDisplayPropertyMappingLimit": {
       "id": 4111,
       "name": "CatalogConfigDisplayPropertyMappingLimit"
+    },
+    "CatalogConfigUnsupportedAdminEntityType": {
+      "id": 4112,
+      "name": "CatalogConfigUnsupportedAdminEntityType"
+    },
+    "CatalogConfigUnsupportedReviewerEntityType": {
+      "id": 4113,
+      "name": "CatalogConfigUnsupportedReviewerEntityType"
     },
     "ExportInvalidStatusUpdate": {
       "id": 5000,
