@@ -2675,7 +2675,7 @@
           "name": "ExpirationDate",
           "jsontype": "String",
           "actualtype": "DateTime",
-          "optional": false
+          "optional": true
         },
         {
           "name": "InstanceId",
@@ -2693,6 +2693,12 @@
           "name": "Marketplace",
           "jsontype": "String",
           "actualtype": "String",
+          "optional": true
+        },
+        {
+          "name": "MergeProperties",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
           "optional": true
         },
         {
