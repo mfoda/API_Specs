@@ -8197,46 +8197,7 @@
           "name": "CatalogFeatureDisabled"
         },
         {
-          "name": "CatalogConfigMissing"
-        },
-        {
-          "name": "CatalogConfigTooManyContentTypes"
-        },
-        {
-          "name": "CatalogConfigContentTypeTooLong"
-        },
-        {
-          "name": "CatalogConfigTooManyTags"
-        },
-        {
-          "name": "CatalogConfigTagTooLong"
-        },
-        {
-          "name": "CatalogConfigInvalidDeepLinkObject"
-        },
-        {
-          "name": "CatalogConfigInvalidDeepLinkPlatform"
-        },
-        {
-          "name": "CatalogConfigInvalidDeepLinkFormat"
-        },
-        {
-          "name": "CatalogConfigInvalidDisplayPropertyObject"
-        },
-        {
-          "name": "CatalogConfigInvalidDisplayPropertyName"
-        },
-        {
-          "name": "CatalogConfigInvalidDisplayPropertyType"
-        },
-        {
-          "name": "CatalogConfigDisplayPropertyMappingLimit"
-        },
-        {
-          "name": "CatalogConfigUnsupportedAdminEntityType"
-        },
-        {
-          "name": "CatalogConfigUnsupportedReviewerEntityType"
+          "name": "CatalogConfigInvalid"
         },
         {
           "name": "ExportInvalidStatusUpdate"

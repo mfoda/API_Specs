@@ -19065,61 +19065,9 @@
       "id": 4009,
       "name": "CatalogFeatureDisabled"
     },
-    "CatalogConfigMissing": {
-      "id": 4100,
-      "name": "CatalogConfigMissing"
-    },
-    "CatalogConfigTooManyContentTypes": {
-      "id": 4101,
-      "name": "CatalogConfigTooManyContentTypes"
-    },
-    "CatalogConfigContentTypeTooLong": {
-      "id": 4102,
-      "name": "CatalogConfigContentTypeTooLong"
-    },
-    "CatalogConfigTooManyTags": {
-      "id": 4103,
-      "name": "CatalogConfigTooManyTags"
-    },
-    "CatalogConfigTagTooLong": {
-      "id": 4104,
-      "name": "CatalogConfigTagTooLong"
-    },
-    "CatalogConfigInvalidDeepLinkObject": {
-      "id": 4105,
-      "name": "CatalogConfigInvalidDeepLinkObject"
-    },
-    "CatalogConfigInvalidDeepLinkPlatform": {
-      "id": 4106,
-      "name": "CatalogConfigInvalidDeepLinkPlatform"
-    },
-    "CatalogConfigInvalidDeepLinkFormat": {
-      "id": 4107,
-      "name": "CatalogConfigInvalidDeepLinkFormat"
-    },
-    "CatalogConfigInvalidDisplayPropertyObject": {
-      "id": 4108,
-      "name": "CatalogConfigInvalidDisplayPropertyObject"
-    },
-    "CatalogConfigInvalidDisplayPropertyName": {
-      "id": 4109,
-      "name": "CatalogConfigInvalidDisplayPropertyName"
-    },
-    "CatalogConfigInvalidDisplayPropertyType": {
-      "id": 4110,
-      "name": "CatalogConfigInvalidDisplayPropertyType"
-    },
-    "CatalogConfigDisplayPropertyMappingLimit": {
-      "id": 4111,
-      "name": "CatalogConfigDisplayPropertyMappingLimit"
-    },
-    "CatalogConfigUnsupportedAdminEntityType": {
-      "id": 4112,
-      "name": "CatalogConfigUnsupportedAdminEntityType"
-    },
-    "CatalogConfigUnsupportedReviewerEntityType": {
-      "id": 4113,
-      "name": "CatalogConfigUnsupportedReviewerEntityType"
+    "CatalogConfigInvalid": {
+      "id": 4010,
+      "name": "CatalogConfigInvalid"
     },
     "ExportInvalidStatusUpdate": {
       "id": 5000,
@@ -19646,20 +19594,7 @@
     "CatalogItemIdInvalid",
     "CatalogSearchParameterInvalid",
     "CatalogFeatureDisabled",
-    "CatalogConfigMissing",
-    "CatalogConfigTooManyContentTypes",
-    "CatalogConfigContentTypeTooLong",
-    "CatalogConfigTooManyTags",
-    "CatalogConfigTagTooLong",
-    "CatalogConfigInvalidDeepLinkObject",
-    "CatalogConfigInvalidDeepLinkPlatform",
-    "CatalogConfigInvalidDeepLinkFormat",
-    "CatalogConfigInvalidDisplayPropertyObject",
-    "CatalogConfigInvalidDisplayPropertyName",
-    "CatalogConfigInvalidDisplayPropertyType",
-    "CatalogConfigDisplayPropertyMappingLimit",
-    "CatalogConfigUnsupportedAdminEntityType",
-    "CatalogConfigUnsupportedReviewerEntityType",
+    "CatalogConfigInvalid",
     "ExportInvalidStatusUpdate",
     "ExportInvalidPrefix",
     "ExportBlobContainerDoesNotExist",
