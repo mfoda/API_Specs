@@ -768,14 +768,6 @@
           "optional": false
         },
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "IdempotencyId",
           "description": "The Idempotency Id for this request",
           "jsontype": "String",
@@ -981,14 +973,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "IdempotencyId",
           "description": "The Idempotency Id for this request",
           "jsontype": "String",
@@ -1178,14 +1162,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "FriendlyId",
           "description": "The friendly Id of target bundle.",
           "jsontype": "String",
@@ -1212,14 +1188,6 @@
       "description": "Delete bundle by Id request",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "Id",
           "description": "Id of target bundle",
@@ -1396,14 +1364,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "FriendlyId",
           "description": "The friendly Id of target bundle.",
           "jsontype": "String",
@@ -1430,14 +1390,6 @@
       "description": "Delete subscription by Id request",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "Id",
           "description": "Id of target subscription",
@@ -1575,14 +1527,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "ExpandReferencedItems",
           "description": "Whether to expand the referenced items",
           "jsontype": "Boolean",
@@ -1617,14 +1561,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "ExpandReferencedItems",
           "description": "Whether to expand the referenced items",
           "jsontype": "Boolean",
@@ -1658,14 +1594,6 @@
       "description": "Get bundle by marketplace offer Id request",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "ExpandReferencedItems",
           "description": "Whether to expand the referenced items",
@@ -2250,14 +2178,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "ExpandReferencedItems",
           "description": "Whether to expand the referenced items",
           "jsontype": "Boolean",
@@ -2292,14 +2212,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "ExpandReferencedItems",
           "description": "Whether to expand the referenced items",
           "jsontype": "Boolean",
@@ -2333,14 +2245,6 @@
       "description": "Get subscription by marketplace offer Id request",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "ExpandReferencedItems",
           "description": "Whether to expand the referenced items",
@@ -3567,14 +3471,6 @@
       "isRequest": true,
       "properties": [
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "ExpandReferencedItems",
           "description": "Whether the referenced items should be expanded.",
           "jsontype": "Boolean",
@@ -3762,14 +3658,6 @@
       "description": "Search subscriptions request",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "ExpandReferencedItems",
           "description": "Whether the referenced items should be expanded.",
@@ -4430,14 +4318,6 @@
           "optional": false
         },
         {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
           "name": "IdempotencyId",
           "description": "The Idempotency Id for this request",
           "jsontype": "String",
@@ -4705,14 +4585,6 @@
       "description": "Update subscription request",
       "isRequest": true,
       "properties": [
-        {
-          "name": "Entity",
-          "description": "The entity to perform this action on.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
         {
           "name": "IdempotencyId",
           "description": "The Idempotency Id for this request",
