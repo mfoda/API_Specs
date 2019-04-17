@@ -562,33 +562,6 @@
         }
       ]
     },
-    "CheckTransferStatusRequest": {
-      "name": "CheckTransferStatusRequest",
-      "className": "CheckTransferStatusRequest",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "description": "Check the status of a transfer all with a transfer ticket Id",
-      "isRequest": true,
-      "properties": [
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "TransferTicketId",
-          "description": "The id of the transfer all request ticket that was returned on a TransferAllRequest",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
     "ConcernCategory": {
       "name": "ConcernCategory",
       "className": "ConcernCategory",
@@ -4018,226 +3991,6 @@
         }
       ]
     },
-    "TransferAllRequest": {
-      "name": "TransferAllRequest",
-      "className": "TransferAllRequest",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "description": "Transfer all assets from an entity's container Id to another entity's container Id.",
-      "isRequest": true,
-      "properties": [
-        {
-          "name": "GivingEntity",
-          "description": "The entity to transfer from.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "ReceivingEntity",
-          "description": "The beneficiary entity from this action.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": false
-        }
-      ]
-    },
-    "TransferAllResult": {
-      "name": "TransferAllResult",
-      "className": "TransferAllResult",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "isResult": true,
-      "properties": [
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "TransferStatus",
-          "jsontype": "String",
-          "actualtype": "TransferAllStatus",
-          "isenum": true,
-          "optional": true
-        },
-        {
-          "name": "TransferTicketId",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    "TransferAllStatus": {
-      "name": "TransferAllStatus",
-      "className": "TransferAllStatus",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "isenum": true,
-      "enumvalues": [
-        {
-          "name": "Completed"
-        },
-        {
-          "name": "InProgress"
-        },
-        {
-          "name": "Aborted"
-        },
-        {
-          "name": "Unknown"
-        }
-      ]
-    },
-    "TransferInventoryItemsRequest": {
-      "name": "TransferInventoryItemsRequest",
-      "className": "TransferInventoryItemsRequest",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "description": "Transfer the specified inventory items of an entity's container Id to another entity's container Id.",
-      "isRequest": true,
-      "properties": [
-        {
-          "name": "GivingEntity",
-          "description": "The entity to transfer from.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "Items",
-          "description": "A list of Items to transfer",
-          "collection": "array",
-          "jsontype": "Object",
-          "actualtype": "InventoryItemDetails",
-          "isclass": true,
-          "optional": false
-        },
-        {
-          "name": "ReceivingEntity",
-          "description": "The beneficiary entity from this action.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": false
-        }
-      ]
-    },
-    "TransferInventoryItemsResult": {
-      "name": "TransferInventoryItemsResult",
-      "className": "TransferInventoryItemsResult",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "isResult": true,
-      "properties": [
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
-    "TransferVirtualCurrenciesRequest": {
-      "name": "TransferVirtualCurrenciesRequest",
-      "className": "TransferVirtualCurrenciesRequest",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "description": "Transfer the specified virtual currencies amount of an entity's container Id to another entity's container Id.",
-      "isRequest": true,
-      "properties": [
-        {
-          "name": "Currencies",
-          "description": "A list of currencies to transfer",
-          "collection": "array",
-          "jsontype": "Object",
-          "actualtype": "CurrencyDetails",
-          "isclass": true,
-          "optional": false
-        },
-        {
-          "name": "GivingEntity",
-          "description": "The entity to transfer from.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": true
-        },
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        },
-        {
-          "name": "ReceivingEntity",
-          "description": "The beneficiary entity from this action.",
-          "jsontype": "Object",
-          "actualtype": "EntityKey",
-          "isclass": true,
-          "optional": false
-        }
-      ]
-    },
-    "TransferVirtualCurrenciesResult": {
-      "name": "TransferVirtualCurrenciesResult",
-      "className": "TransferVirtualCurrenciesResult",
-      "classNameSpace": "PlayFab.Economy.Models",
-      "assembly": "PlayFab.Economy.Models",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "isResult": true,
-      "properties": [
-        {
-          "name": "IdempotencyId",
-          "description": "The Idempotency Id for this request",
-          "jsontype": "String",
-          "actualtype": "String",
-          "optional": true
-        }
-      ]
-    },
     "UgcRatings": {
       "name": "UgcRatings",
       "className": "UgcRatings",
@@ -4768,7 +4521,6 @@
       "name": "Inventory",
       "methods": [
         "AddVirtualCurrencies",
-        "CheckTransferAllStatus",
         "ConsumeInventoryItems",
         "GetInventoryItems",
         "GetVirtualCurrencies",
@@ -4776,9 +4528,6 @@
         "SetInventoryItems",
         "SetVirtualCurrencies",
         "SubtractVirtualCurrencies",
-        "TransferAll",
-        "TransferInventoryItems",
-        "TransferVirtualCurrencies",
         "UpdateInventoryItemsProperties"
       ]
     },
@@ -4818,28 +4567,6 @@
       "request": "AddVirtualCurrenciesRequest",
       "requestExample": "",
       "result": "AddVirtualCurrenciesResult",
-      "resultExample": "",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
-        "ProfileDoesNotExist"
-      ]
-    },
-    {
-      "name": "CheckTransferAllStatus",
-      "summary": "Check the status of a transfer all request",
-      "requestDetails": "Check the status of a transfer all with a transfer ticket Id",
-      "subgroup": "Inventory",
-      "titleTiers": null,
-      "url": "/Inventory/CheckTransferAllStatus",
-      "auth": "EntityToken",
-      "method": "POST",
-      "request": "CheckTransferStatusRequest",
-      "requestExample": "",
-      "result": "TransferAllResult",
       "resultExample": "",
       "AnyInclusiveFlags": [
         "Beta"
@@ -6039,72 +5766,6 @@
       "request": "SubtractVirtualCurrenciesRequest",
       "requestExample": "",
       "result": "SubtractVirtualCurrenciesResult",
-      "resultExample": "",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
-        "ProfileDoesNotExist"
-      ]
-    },
-    {
-      "name": "TransferAll",
-      "summary": "Transfer all assets",
-      "requestDetails": "Transfer all assets from an entity's container Id to another entity's container Id.",
-      "subgroup": "Inventory",
-      "titleTiers": null,
-      "url": "/Inventory/TransferAll",
-      "auth": "EntityToken",
-      "method": "POST",
-      "request": "TransferAllRequest",
-      "requestExample": "",
-      "result": "TransferAllResult",
-      "resultExample": "",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
-        "ProfileDoesNotExist"
-      ]
-    },
-    {
-      "name": "TransferInventoryItems",
-      "summary": "Transfer inventory items.",
-      "requestDetails": "Transfer the specified inventory items of an entity's container Id to another entity's container Id.",
-      "subgroup": "Inventory",
-      "titleTiers": null,
-      "url": "/Inventory/TransferInventoryItems",
-      "auth": "EntityToken",
-      "method": "POST",
-      "request": "TransferInventoryItemsRequest",
-      "requestExample": "",
-      "result": "TransferInventoryItemsResult",
-      "resultExample": "",
-      "AnyInclusiveFlags": [
-        "Beta"
-      ],
-      "errors": [
-        "NotAuthenticated",
-        "NotAuthorized",
-        "ProfileDoesNotExist"
-      ]
-    },
-    {
-      "name": "TransferVirtualCurrencies",
-      "summary": "Transfer virtual currencies.",
-      "requestDetails": "Transfer the specified virtual currencies amount of an entity's container Id to another entity's container Id.",
-      "subgroup": "Inventory",
-      "titleTiers": null,
-      "url": "/Inventory/TransferVirtualCurrencies",
-      "auth": "EntityToken",
-      "method": "POST",
-      "request": "TransferVirtualCurrenciesRequest",
-      "requestExample": "",
-      "result": "TransferVirtualCurrenciesResult",
       "resultExample": "",
       "AnyInclusiveFlags": [
         "Beta"
