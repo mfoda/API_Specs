@@ -171,6 +171,13 @@
       ],
       "properties": [
         {
+          "name": "AllowMultipleStacks",
+          "description": "Indicates whether there can be multiple stacks of this item.",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
+          "optional": true
+        },
+        {
           "name": "AlternateIds",
           "description": "The alternate IDs associated with this item.",
           "collection": "array",
@@ -232,6 +239,13 @@
           "optional": true
         },
         {
+          "name": "EndDate",
+          "description": "The date of when the item will cease to be available. If not provided then the product will be available indefinitely.",
+          "jsontype": "String",
+          "actualtype": "DateTime",
+          "optional": true
+        },
+        {
           "name": "ETag",
           "description": "The current ETag value that can be used for optimistic concurrency in the If-None-Match header.",
           "jsontype": "String",
@@ -255,8 +269,22 @@
           "optional": true
         },
         {
+          "name": "IsConsumable",
+          "description": "Indicates whether the item is a consumable or durable.",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
+          "optional": true
+        },
+        {
           "name": "IsHidden",
-          "description": "Indicates if the item is hidden",
+          "description": "Indicates if the item is hidden.",
+          "jsontype": "Boolean",
+          "actualtype": "Boolean",
+          "optional": true
+        },
+        {
+          "name": "IsStackable",
+          "description": "Indicates if this item can be stacked or if they should be handled individually.",
           "jsontype": "Boolean",
           "actualtype": "Boolean",
           "optional": true
