@@ -6757,6 +6757,10 @@
     "ExportUnknownError": {
       "id": 5013,
       "name": "ExportUnknownError"
+    },
+    "ExportCantEditPendingExport": {
+      "id": 5014,
+      "name": "ExportCantEditPendingExport"
     }
   },
   "errorList": [
@@ -7241,6 +7245,7 @@
     "ExportKustoExceptionNew_SomeResources",
     "ExportKustoExceptionEdit",
     "ExportKustoConnectionFailed",
-    "ExportUnknownError"
+    "ExportUnknownError",
+    "ExportCantEditPendingExport"
   ]
 }

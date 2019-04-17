@@ -8240,6 +8240,9 @@
         },
         {
           "name": "ExportUnknownError"
+        },
+        {
+          "name": "ExportCantEditPendingExport"
         }
       ]
     },

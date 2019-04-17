@@ -8542,6 +8542,10 @@
     "ExportUnknownError": {
       "id": 5013,
       "name": "ExportUnknownError"
+    },
+    "ExportCantEditPendingExport": {
+      "id": 5014,
+      "name": "ExportCantEditPendingExport"
     }
   }
 }
