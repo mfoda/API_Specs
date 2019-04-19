@@ -8243,6 +8243,12 @@
         },
         {
           "name": "ExportCantEditPendingExport"
+        },
+        {
+          "name": "ExportLimitExports"
+        },
+        {
+          "name": "ExportLimitEvents"
         }
       ]
     },

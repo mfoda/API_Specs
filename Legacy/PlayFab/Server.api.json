@@ -4386,6 +4386,12 @@
         },
         {
           "name": "ExportCantEditPendingExport"
+        },
+        {
+          "name": "ExportLimitExports"
+        },
+        {
+          "name": "ExportLimitEvents"
         }
       ]
     },
@@ -16751,6 +16757,14 @@
     "ExportCantEditPendingExport": {
       "id": 5014,
       "name": "ExportCantEditPendingExport"
+    },
+    "ExportLimitExports": {
+      "id": 5015,
+      "name": "ExportLimitExports"
+    },
+    "ExportLimitEvents": {
+      "id": 5016,
+      "name": "ExportLimitEvents"
     }
   },
   "errorList": [
@@ -17236,6 +17250,8 @@
     "ExportKustoExceptionEdit",
     "ExportKustoConnectionFailed",
     "ExportUnknownError",
-    "ExportCantEditPendingExport"
+    "ExportCantEditPendingExport",
+    "ExportLimitExports",
+    "ExportLimitEvents"
   ]
 }
